@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.Drawing
 Push-Location (Split-Path $PSScriptRoot -Parent)
 try {
-    New-Item -ItemType Directory -Force docs/assets/images,docs/assets/brand | Out-Null
+    New-Item -ItemType Directory -Force docs/assets/images,docs/assets/brand,docs/images/Logo | Out-Null
     function Resize-Asset($Source, $Target, $Width, $Format) {
         $original = [Drawing.Image]::FromFile((Join-Path $PWD $Source))
         $height = [int][Math]::Round($original.Height * $Width / $original.Width)
@@ -23,7 +23,7 @@ try {
     }
     Resize-Asset 'assets/kauai-plantation-home-original.png' 'docs/assets/images/kauai-home-1536.jpg' 1536 'jpeg'
     Resize-Asset 'assets/kauai-plantation-home-original.png' 'docs/assets/images/kauai-home-960.jpg' 960 'jpeg'
-    Resize-Asset 'images/Logo/Yandow Walker.png' 'docs/assets/brand/yandow-walker-color.png' 408 'png'
+    Copy-Item -LiteralPath 'images/Logo/Yandow Walker.png' -Destination 'docs/images/Logo/Yandow Walker.png'
     Resize-Asset 'images/Logo/yandow walker logo5 - Copy.png' 'docs/assets/brand/yandow-walker-cream.png' 408 'png'
     Resize-Asset 'images/Logo/Yandow Walker.png' 'docs/assets/brand/favicon.png' 96 'png'
 } finally { Pop-Location }

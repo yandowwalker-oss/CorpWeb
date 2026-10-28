@@ -20,7 +20,7 @@ The site is prepared for deployment; company content still needs approval. See [
 
 The actual source directory is lowercase `images/Logo/`. Keep exact filename casing on GitHub. Only `docs/` is published. Keep deployment links relative so they work at both a domain root and a repository subpath.
 
-The full-color PNG is used on the light header and the cream PNG on the dark footer. Full canvases and transparent margins are retained; do not crop, stretch, recolor, or filter the logos. Button red `#ae0400` comes from the full-color artwork. Hero copies are quality-90 JPEGs at 1536 and 960 pixels, selected with `srcset`; the original PNG remains intact. Images have explicit dimensions; the hero has high fetch priority and lower images load lazily.
+The light header uses an exact copy of `images/Logo/Yandow Walker.png`, published as `docs/images/Logo/Yandow Walker.png`. Its URL is relative and space-encoded for repository-subpath compatibility. The cream PNG is used on the dark footer. Full canvases and transparent margins are retained; do not crop, stretch, recolor, or filter the logos. Button red `#ae0400` comes from the full-color artwork. Hero copies are quality-90 JPEGs at 1536 and 960 pixels, selected with `srcset`; the original PNG remains intact. Images have explicit dimensions; the hero has high fetch priority and lower images load lazily.
 
 ## Preview locally
 
