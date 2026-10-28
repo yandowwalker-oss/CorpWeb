@@ -1,6 +1,6 @@
 # Content review before public launch
 
-The static site is prepared for GitHub Pages deployment from `/docs`. Deployment readiness does **not** mean company content has been approved. Complete this review before enabling public hosting.
+The static site is prepared for GitHub Pages deployment from the repository root. Deployment readiness does **not** mean company content has been approved. Complete this review before enabling public hosting.
 
 ## Company facts and draft copy
 
@@ -24,6 +24,6 @@ The static site is prepared for GitHub Pages deployment from `/docs`. Deployment
 
 ## Public launch
 
-- [ ] Confirm the final working public URL, then add absolute canonical, `og:url`, `og:image`, and `twitter:image` metadata with appropriate illustrative-image labeling. The owner's existing remote `CNAME` specifies `yandowwalkerconstruction.com` and is preserved in `docs/CNAME`; DNS and HTTPS have not been verified. No social-image URL has been invented.
-- [ ] The owner reports Pages is configured on `main`; confirm it uses `/docs` and check the deployment after the authorized push. Remote account eligibility and Pages settings have not been changed by this task.
+- [ ] Confirm the final working public URL, then add absolute canonical, `og:url`, `og:image`, and `twitter:image` metadata with appropriate illustrative-image labeling. The owner's existing remote `CNAME` specifies `yandowwalkerconstruction.com` and is preserved in `CNAME`; DNS and HTTPS have not been verified. No social-image URL has been invented.
+- [ ] The owner reports Pages is configured on `main`; keep it set to `/ (root)` and check the deployment after the authorized push. Remote account eligibility and Pages settings have not been changed by this task.
 - [ ] Review on physical phones and in Safari/Firefox. Local interaction/layout tests used desktop Edge; this is not a full accessibility or cross-browser certification.

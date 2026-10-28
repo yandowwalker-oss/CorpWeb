@@ -3,9 +3,6 @@
 *.css text eol=lf
 *.js text eol=lf
 *.md text eol=lf
-*.ps1 text eol=lf
 CNAME text eol=lf
 /images/** binary
 /assets/** binary
-# Preserve the supplied mockup byte-for-byte, including its Windows newlines.
-/index.html -text whitespace=cr-at-eol
