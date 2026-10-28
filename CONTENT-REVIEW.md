@@ -12,8 +12,7 @@ The static site is prepared for GitHub Pages deployment from the repository root
 
 ## Contact and inquiry
 
-- [ ] Supply approved phone, email, and any public business address. None were found in the supplied files.
-- [ ] Choose the final inquiry route: verified contact information or an approved static-compatible form provider. Until then, project CTAs open a **copy-only** brief tool. It sends nothing, makes no external requests, and stores no entries beyond the current page. Copying writes the brief to the visitor's clipboard.
+- [x] The owner supplied **YandowWalker@Gmail.com** as the single contact destination. The website provides one direct email link and no project-brief dialog or form. Section navigation leads visitors to the contact area.
 - [ ] Approve appropriate privacy language if a form provider, analytics, or other data collection is added.
 
 ## Imagery and brand
