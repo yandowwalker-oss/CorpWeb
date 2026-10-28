@@ -4,9 +4,9 @@ The live website is maintained directly in the repository root. GitHub Pages ser
 
 ## Source files
 
-- `index.html` — page content, navigation, metadata, and email contact.
+- `index.html` — page content, navigation, metadata, and project-inquiry form.
 - `css/site.css` — responsive styles; colors and typography are centralized in `:root`.
-- `js/site.js` — responsive navigation menu.
+- `js/site.js` — responsive navigation and project-details validation.
 - `images/Logo/Yandow Walker.png` — original full-color logo referenced directly by the header.
 - `assets/` — hero imagery, footer logo, and favicon; original artwork also remains in `images/Logo/`.
 - `.nojekyll` — direct static publishing.
@@ -22,4 +22,4 @@ Edit the source files, review the changes, then commit and push to `main`. GitHu
 
 ## Content review
 
-See [CONTENT-REVIEW.md](CONTENT-REVIEW.md) for facts and copy requiring company approval. The house illustration is not a completed company project. The single contact action opens the visitor's email application addressed to **YandowWalker@Gmail.com**. There is no contact form or project-brief dialog.
+See [CONTENT-REVIEW.md](CONTENT-REVIEW.md) for facts and copy requiring company approval. The house illustration is not a completed company project. All contact navigation leads to one form with name, reply email, and project details. Send opens a pre-populated draft in the visitor's email application using `mailto:`; they must send it there. The destination address is not displayed in the form, but is necessarily present in its source. No email is sent by the website, and form values remain available if no email app opens. Replace this temporary handoff with a server-backed submission endpoint later.

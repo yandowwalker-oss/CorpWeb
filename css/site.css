@@ -572,3 +572,17 @@ button { color: inherit; }
   .menu-toggle { padding: 10px 4px; }
   .hero .eyebrow { letter-spacing: .1em; }
 }
+
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: start; gap: 7%; }
+.contact-form { min-width: 0; padding: 28px; border: 1px solid var(--line); background: var(--paper); }
+.contact-field { display: flex; flex-direction: column; gap: 7px; margin-bottom: 20px; }
+.contact-field label { font-size: 13px; font-weight: 700; }
+.contact-field input, .contact-field textarea { width: 100%; min-width: 0; min-height: 46px; border: 1px solid #8c9587; border-radius: 0; padding: 12px; background: white; color: var(--ink); font: 16px/1.5 var(--sans); }
+.contact-field textarea { resize: vertical; }
+.contact-form .btn { width: 100%; }
+.contact-form .btn:disabled { background: #596153; cursor: not-allowed; transform: none; }
+.contact-status { margin: 16px 0 0; font-size: 13px; line-height: 1.6; overflow-wrap: anywhere; }
+@media (max-width: 760px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 30px; }
+  .contact-form { width: 100%; padding: 22px; }
+}

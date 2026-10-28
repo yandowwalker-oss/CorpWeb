@@ -12,7 +12,8 @@ The static site is prepared for GitHub Pages deployment from the repository root
 
 ## Contact and inquiry
 
-- [x] The owner supplied **YandowWalker@Gmail.com** as the single contact destination. The website provides one direct email link and no project-brief dialog or form. Section navigation leads visitors to the contact area.
+- [x] Temporary contact flow approved by the owner: the form collects name, reply email, and project details, then opens a pre-populated email draft to the designated mailbox. The destination address is not displayed in the form; it is present in the HTML action as required by `mailto:`. The visitor must send the draft from their email app. All navigation links remain on-page.
+- [ ] Replace the temporary email-app handoff with a server-backed form endpoint when available. Confirm delivery to the designated mailbox before declaring that future submission service ready.
 - [ ] Approve appropriate privacy language if a form provider, analytics, or other data collection is added.
 
 ## Imagery and brand
