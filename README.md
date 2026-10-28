@@ -16,7 +16,7 @@ The site is prepared for deployment; company content still needs approval. See [
 | `index.html` | Original mockup, preserved as supplied |
 | `assets/kauai-plantation-home-original.png` | Original hero illustration, preserved |
 | `images/Logo/` | Original official PNG/JPG/PDF/EPS/AI logos, preserved |
-| `scripts/` | Optional Windows asset preparation, preview, and validation |
+| `scripts/` | Optional local preview and validation tools; never part of deployment |
 
 The actual source directory is lowercase `images/Logo/`. Keep exact filename casing on GitHub. Only `docs/` is published. Keep deployment links relative so they work at both a domain root and a repository subpath.
 
@@ -40,11 +40,7 @@ python -m http.server 8080 --directory docs
 
 Use HTTP preview for clipboard tests. If automatic copying is denied, the dialog selects the brief and explains manual copying. There is no local storage, network submission, analytics, or external dependency.
 
-Regenerate optimized assets on Windows with .NET System.Drawing:
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts/prepare-assets.ps1
-```
+All public images are already prepared and committed. The header references its committed PNG directly in `docs/index.html`; CSS sets its display size to 156 × 156px on desktop and 120 × 120px on mobile. GitHub Pages serves these files as-is. No asset-generation script or manual preparation step is required.
 
 ## Validation
 
